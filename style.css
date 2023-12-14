@@ -1,0 +1,106 @@
+/*
+Theme Name: OceanWP Planty
+Theme URI: https://oceanwp.org/
+Template: oceanwp
+Author: OceanWP
+Author URI: https://oceanwp.org/about-oceanwp/
+Description: OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful &amp; professional design. Very fast, responsive, RTL &amp; translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet &amp; mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor &amp; WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it's the only theme you will ever need: https://oceanwp.org/demos/
+Tags: two-columns,right-sidebar,footer-widgets,blog,news,custom-background,custom-menu,post-formats,rtl-language-support,sticky-post,editor-style,threaded-comments,translation-ready,buddypress,custom-colors,featured-images,full-width-template,theme-options,e-commerce,block-styles,wide-blocks,accessibility-ready
+Version: 3.5.1.1700300552
+Updated: 2023-11-18 09:42:32
+
+*/
+
+/* formulaire commandes*/
+.contact-form{
+	display:flex;
+	justify-content:center;
+	color:white;
+	align-items:center;
+	font-family:"Syne",sans-serif;
+	font-size:20px;
+	font-weight:400;
+	line-height:normal;
+}
+.contact-form label{
+	display:block;
+	margin:32px 0 16px 0;
+	font-weight:light;
+}
+.vertical-line{
+	display:inline-block;
+	margin:0 45px ;
+	border-left:1px solid#fff;
+	height:447px;
+	margin-top:55px;
+}
+.title{
+	color:white;
+	font-family:"Syne",sans-serif;
+	font-size:30px;
+	font-weight:700;
+	margin-top:53px;
+	line-height:normal;
+}
+input[type=text].wpcf7-text, input[type=email].wpcf7-email{
+	width:387px;
+	height:71px;
+	background-color:white;
+	color:black;
+	font-family: 'Syne',sans-serif;
+	font-size:20px;
+	border-radius:7px;
+	box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.04);
+	
+}
+input[type="submit"].wpcf7-submit{
+	background:#E0B9B4;
+	display: flex;
+    width:198px;
+    height: 55px;
+	margin-left:44%;
+	margin-top:24px;	
+	padding:19px 56px 19px 57px;
+	border-radius:5px;
+	font-family:'Syne',sans-serif;
+	font-size:15px;
+	letter-spacing:normal;
+	text-transform:none;
+	font-weight:normal;
+}
+input[type="submit"]:hover{
+	background-color:#C02E44;
+}
+/* formulaire nous rencontrer*/
+.contact{	
+	display:flex;
+	flex-direction:column;
+	width:339px;
+	margin:auto;
+	color: #000;
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.contact label{
+	display:block;
+	margin:32px 0 16px 0;
+	font-weight:light;
+}
+.message{
+	background-color:white;
+	width: 383px;
+    height: 237px;
+    flex-shrink: 0;
+}
+
+@media(max-width:860px){
+	.contact-form {flex-direction:column;}
+	.contact{display:block;margin:auto;}
+	.vertical-line { display:none}
+	input[type="submit"].wpcf7-submit{margin:auto;margin-top:30px;}
+	input[type=text].wpcf7-text, input[type=email].wpcf7-email{ width:300px;height:50px}
+	.message{ width:300px;height:50px}
+}
