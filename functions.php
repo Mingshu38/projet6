@@ -21,6 +21,18 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
+/* HOOK */
+
+function my_wp_nav_menu_args( $args = '' ) {
+    if( is_user_logged_in() ) { 
+        $args['menu'] = 'menu-admin';
+    } else { 
+        $args['menu'] = 'menu-visitor';
+    } 
+        return $args;
+    }
+    add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+
 
 
 // END ENQUEUE PARENT ACTION

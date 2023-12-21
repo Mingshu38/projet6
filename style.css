@@ -24,7 +24,7 @@ Updated: 2023-11-18 09:42:32
 }
 .contact-form label{
 	display:block;
-	margin:32px 0 16px 0;
+	margin:22px 0 16px 0;
 	font-weight:light;
 }
 .vertical-line{
@@ -59,7 +59,7 @@ input[type="submit"].wpcf7-submit{
     width:198px;
     height: 55px;
 	margin-left:44%;
-	margin-top:24px;	
+	margin-top:10px;	
 	padding:19px 56px 19px 57px;
 	border-radius:5px;
 	font-family:'Syne',sans-serif;
@@ -86,7 +86,7 @@ input[type="submit"]:hover{
 }
 .contact label{
 	display:block;
-	margin:32px 0 16px 0;
+	margin:10px 0 10px 0;
 	font-weight:light;
 }
 .message{
