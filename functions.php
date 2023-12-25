@@ -33,6 +33,8 @@ function my_wp_nav_menu_args( $args = '' ) {
     }
     add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
 
+/*FIN DU HOOK*/
+
 
 
 // END ENQUEUE PARENT ACTION
